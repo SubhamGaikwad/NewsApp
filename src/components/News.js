@@ -68,7 +68,7 @@ export class News extends Component {
         <h2 className="text-center">TOP HEADLINE</h2>
         {this.state.loading && <Spinner />}
         <div className="row">
-          {this.state.articles.map((element) => {
+          {this.state.articles?.map((element) => {
             return (
               <div className="col-md-4">
                 <NewsUpdate
